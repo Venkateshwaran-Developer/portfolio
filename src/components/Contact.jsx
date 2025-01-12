@@ -1,11 +1,55 @@
-
+import { useState } from "react";
 import { IoCallOutline, IoLocationOutline, IoMailOutline } from "react-icons/io5";
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon4 from '../assets/img/nav-icon4.svg';
 import navIcon5 from '../assets/img/nav-icon5.svg'; 
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Contact = () => {
+
+  
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [purpose, setPurpose] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const serviceId = "service_o1ji7yd";
+    const templateId = "template_n9u6cmp";
+    const publicKey = "24DQFIBUGvx7FbHuj";
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      from_phone: phone,
+      from_purpose: purpose,
+      to_name: "Pushpa Crackers",
+    };
+
+    emailjs.send(serviceId, templateId, templateParams, publicKey)
+    .then((response) => {
+      console.log('SUCCESS!', response.status, response.text);
+      setName('');
+      setEmail('');
+      setPhone('');
+      setPurpose('');
+      toast.success('Response Submitted Successfully')
+    }
+    )
+    .catch((error) => {
+      console.log('FAILED...', error);
+    });
+
+
+
+
+
+  }
+
   return (
     <div id="contact" className="h-auto w-full">
       <section
@@ -17,11 +61,11 @@ const Contact = () => {
            
             <div className="flex flex-col gap-6 ">
               <h2 className="text-[38px] font-bold">
-                Please Drop a Message
+                Please Drop a purpose
               </h2>
               <p className="text-gray-400">
                 Get in touch. Fill out the form
-                and i’ll be in touch as soon as possible.
+                and i will be in touch as soon as possible.
               </p>
             </div>
           </div>
@@ -95,7 +139,7 @@ const Contact = () => {
           </ul>
         </div>
 
-        <form action="" className=" flex flex-col bg-white gap-3 h-auto w-auto lg:w-[400px]  px-[52px] py-[20px] rounded-xl">
+        <form onSubmit={(e) => handleSubmit(e)} action="" className=" flex flex-col bg-white gap-3 h-auto w-auto lg:w-[400px]  px-[52px] py-[20px] rounded-xl">
           <div className="form-wrapper">
             <label htmlFor="name" className="text-black form-label">
               Name
@@ -106,8 +150,10 @@ const Contact = () => {
                 type="text"
                 name="name"
                 id="name"
+                value={name}
                 required
                 placeholder="Your Name"
+                onChange={(e) => setName(e.target.value)}
                 className="w-[100%] rounded-lg h-[35px] px-[10px] bg-black"
               />
 
@@ -125,6 +171,8 @@ const Contact = () => {
                 type="email"
                 name="email"
                 id="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 required
                 placeholder="you@mail.com"
                 className="w-[100%] rounded-lg h-[35px] px-[10px] bg-black"
@@ -144,6 +192,8 @@ const Contact = () => {
                 type="tel"
                 name="phone"
                 id="phone"
+                onChange={(e) => setPhone(e.target.value)}
+                value={phone}
                 required
                 placeholder="Phone Number"
                 className="w-[100%] rounded-lg h-[35px] px-[10px] bg-black"
@@ -154,16 +204,18 @@ const Contact = () => {
           </div>
 
           <div className="form-wrapper">
-            <label htmlFor="message" className="text-black form-label">
-              Message
+            <label htmlFor="purpose" className="text-black form-label">
+              purpose
             </label>
 
             <div className="input-wrapper">
               <textarea
-                name="message"
-                id="message"
+                name="purpose"
+                id="purpose"
+                value={purpose}
+                onChange={(e) => setPurpose(e.target.value)}
                 required
-                placeholder="Write message..."
+                placeholder="Write purpose..."
                 className="w-[100%] rounded-lg h-[150px] px-[10px] py-[10px] bg-black"
               ></textarea>
 
@@ -174,6 +226,7 @@ const Contact = () => {
           <button type="submit" className="text-white bg-black py-2 rounded-lg">
             Send
           </button>
+          <ToastContainer />
         </form>
       </section>
     </div>
