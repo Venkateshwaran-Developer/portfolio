@@ -1,6 +1,8 @@
 import project1 from "../assets/img/project1.png";
 import project2 from "../assets/img/project2.png";
 import project3 from "../assets/img/project3.png";
+import project4 from "../assets/img/project4.png";
+
 
 
 function Projects() {
@@ -84,7 +86,30 @@ function Projects() {
         <div className=" bg-white sm:w-auto md:w-96 drop-shadow-2xl h-[485px] flex flex-col items-center justify-center  rounded-3xl">
           <div className="">
             <img
-              src={project1}
+              src={project4}
+              alt="Project 1"
+              className="sm:w-60 drop-shadow-2xl sm:h-[150px] md:w-80 md:h-[200px] rounded-3xl"
+            />
+          </div>
+          <h2 className="text-black pt-5">Ecommerce Project</h2>
+
+          <p className="py-2 px-10">
+            <b className="">Technologies Used :</b> Html, Css, Javascript, TailwindCss,
+            React.js, Node.js, Express.js, MongoDb
+          </p>
+          <div className="text-black flex gap-3 ">
+            <a href="https://github.com/Venkateshwaran-Developer/simple-ecommerce-project" className="no-underline text-black font-bold"><button className=" border-2 w-[118px] text-sm flex justify-center items-center h-10 border-solid py-2 px-4 rounded-full border-gray-400 hover:bg-black hover:text-white">
+              Github
+            </button></a>
+           <a href="https://simple-ecommerce-project.vercel.app" className="no-underline text-black font-bold"> <button className=" border-2 w-[122px] text-sm flex justify-center items-center h-10 border-solid py-2 px-4 rounded-full border-gray-400 hover:bg-black hover:text-white">
+              Live Demo
+            </button></a>
+          </div>
+        </div>{" "}
+        <div className=" bg-white sm:w-auto md:w-96 drop-shadow-2xl h-[485px] flex flex-col items-center justify-center  rounded-3xl">
+          <div className="">
+            <img
+              src={project3}
               alt="Project 1"
               className="sm:w-60 drop-shadow-2xl sm:h-[150px] md:w-80 md:h-[200px] rounded-3xl"
             />
@@ -107,30 +132,7 @@ function Projects() {
         <div className=" bg-white sm:w-auto md:w-96 drop-shadow-2xl h-[485px] flex flex-col items-center justify-center  rounded-3xl">
           <div className="">
             <img
-              src={project1}
-              alt="Project 1"
-              className="sm:w-60 drop-shadow-2xl sm:h-[150px] md:w-80 md:h-[200px] rounded-3xl"
-            />
-          </div>
-          <h2 className="text-black pt-5">Ecommerce Project</h2>
-
-          <p className="py-2 px-10">
-            <b className="">Technologies Used :</b> Html, Css, Javascript,
-            React,Node
-          </p>
-          <div className="text-black flex gap-3 ">
-            <button className=" border-2 w-[118px] text-sm flex justify-center items-center h-10 border-solid py-2 px-4 rounded-full border-gray-400 hover:bg-black hover:text-white">
-              Github
-            </button>
-            <button className=" border-2 w-[118px] text-sm flex justify-center items-center h-10 border-solid py-2 px-4 rounded-full border-gray-400 hover:bg-black hover:text-white">
-              Live Demo
-            </button>
-          </div>
-        </div>{" "}
-        <div className=" bg-white sm:w-auto md:w-96 drop-shadow-2xl h-[485px] flex flex-col items-center justify-center  rounded-3xl">
-          <div className="">
-            <img
-              src={project1}
+              src={project4}
               alt="Project 1"
               className="sm:w-60 drop-shadow-2xl sm:h-[150px] md:w-80 md:h-[200px] rounded-3xl"
             />
