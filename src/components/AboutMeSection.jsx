@@ -32,7 +32,7 @@ const AboutMeSection = () => {
               <img src={edu} className=" h-[50px]" />
               <h1 className=" text-xl font-bold">Education</h1>
               <p className="text-gray-500">B.Tech IT (UG)</p>
-              <p className="text-gray-500 ">Bio Maths (12th)</p>
+              <p className="text-gray-500 ">Bio Maths (HSC)</p>
             </div>
             
           </div>

@@ -2,6 +2,10 @@ import project1 from "../assets/img/project1.png";
 import project2 from "../assets/img/project2.png";
 import project3 from "../assets/img/project3.png";
 import project4 from "../assets/img/project4.png";
+import project5 from "../assets/img/project5.png";
+import project6 from "../assets/img/project6.jpg";
+
+
 
 
 
@@ -19,10 +23,10 @@ function Projects() {
             <img
               src={project1}
               alt="Project 1"
-              className="sm:w-60 drop-shadow-2xl sm:h-[150px] md:w-80 md:h-[200px] rounded-3xl"
+              className="sm:w-60 drop-shadow-2xl sm:h-[150px] object-fill md:w-80 md:h-[200px] rounded-3xl"
             />
           </div>
-          <h2 className="text-black pt-5">SGT Travels</h2>
+          <h2 className="text-blue-700 font-bold text-[20px] pt-5">SGT Travels</h2>
 
           <p className="py-2 px-10">
             <b className="">Technologies Used :</b> Html, Css, Javascript,
@@ -45,7 +49,7 @@ function Projects() {
               className="sm:w-60 drop-shadow-2xl sm:h-[150px] md:w-80 md:h-[200px] rounded-3xl"
             />
           </div>
-          <h2 className="text-black pt-5">Pushpa Crackers</h2>
+          <h2 className="text-blue-700 font-bold text-[20px] pt-5">Pushpa Crackers</h2>
 
           <p className="py-2 px-10">
             <b className="">Technologies Used :</b> Html, Css, Javascript,
@@ -68,7 +72,7 @@ function Projects() {
               className="sm:w-60 drop-shadow-2xl sm:h-[150px] md:w-80 md:h-[200px] rounded-3xl"
             />
           </div>
-          <h2 className="text-black pt-5">Portfolio</h2>
+          <h2 className="text-blue-700 font-bold text-[20px] pt-5">Portfolio</h2>
 
           <p className="py-2 px-10">
             <b className="">Technologies Used :</b> Html, Css, Javascript,
@@ -91,7 +95,7 @@ function Projects() {
               className="sm:w-60 drop-shadow-2xl sm:h-[150px] md:w-80 md:h-[200px] rounded-3xl"
             />
           </div>
-          <h2 className="text-black pt-5">Ecommerce Project</h2>
+          <h2 className="text-blue-700 font-bold text-[20px] pt-5">Basic Ecommerce Project</h2>
 
           <p className="py-2 px-10">
             <b className="">Technologies Used :</b> Html, Css, Javascript, TailwindCss,
@@ -109,47 +113,47 @@ function Projects() {
         <div className=" bg-white sm:w-auto md:w-96 drop-shadow-2xl h-[485px] flex flex-col items-center justify-center  rounded-3xl">
           <div className="">
             <img
-              src={project3}
+              src={project5}
               alt="Project 1"
-              className="sm:w-60 drop-shadow-2xl sm:h-[150px] md:w-80 md:h-[200px] rounded-3xl"
+              className="sm:w-60 drop-shadow-2xl sm:h-[150px]    md:w-80 md:h-[200px] rounded-3xl"
             />
           </div>
-          <h2 className="text-black pt-5">Ecommerce Project</h2>
+          <h2 className="text-blue-700 font-bold text-[20px] pt-5">Employee Management System</h2>
 
           <p className="py-2 px-10">
-            <b className="">Technologies Used :</b> Html, Css, Javascript,
-            React,Node
+            <b className="">Technologies Used :</b> Html, Css, Javascript, TailwindCss,
+            React.js, Node.js, Express.js, MongoDb atlas, Multer.
           </p>
           <div className="text-black flex gap-3 ">
-            <button className=" border-2 w-[118px] text-sm flex justify-center items-center h-10 border-solid py-2 px-4 rounded-full border-gray-400 hover:bg-black hover:text-white">
+            <a  href="https://github.com/Venkateshwaran-Developer/employee-center" className="no-underline text-black font-bold"><button className=" border-2 w-[118px] text-sm flex justify-center items-center h-10 border-solid py-2 px-4 rounded-full border-gray-400 hover:bg-black hover:text-white">
               Github
-            </button>
-            <button className=" border-2 w-[118px] text-sm flex justify-center items-center h-10 border-solid py-2 px-4 rounded-full border-gray-400 hover:bg-black hover:text-white">
+            </button></a>
+            <a  href="https://employee-center-one.vercel.app" className="no-underline text-black font-bold"><button className=" border-2 w-[122px] text-sm flex justify-center items-center h-10 border-solid py-2 px-4 rounded-full border-gray-400 hover:bg-black hover:text-white">
               Live Demo
-            </button>
+            </button></a>
           </div>
         </div>{" "}
         <div className=" bg-white sm:w-auto md:w-96 drop-shadow-2xl h-[485px] flex flex-col items-center justify-center  rounded-3xl">
           <div className="">
             <img
-              src={project4}
+              src={project6}
               alt="Project 1"
               className="sm:w-60 drop-shadow-2xl sm:h-[150px] md:w-80 md:h-[200px] rounded-3xl"
             />
           </div>
-          <h2 className="text-black pt-5">Ecommerce Project</h2>
+          <h2 className="text-blue-700 font-bold text-[20px] pt-5">Upcoming Advanced Ecommerce</h2>
 
           <p className="py-2 px-10">
-            <b className="">Technologies Used :</b> Html, Css, Javascript,
-            React,Node
+            <b className="">Technologies Used :</b> Html, Css, Javascript, TailwindCss,
+            React.js, Node.js, Express.js, MongoDb, 
           </p>
           <div className="text-black flex gap-3 ">
-            <button className=" border-2 w-[118px] text-sm flex justify-center items-center h-10 border-solid py-2 px-4 rounded-full border-gray-400 hover:bg-black hover:text-white">
+          <a  href="" className="no-underline text-black font-bold"><button className=" border-2 w-[118px] text-sm flex justify-center items-center h-10 border-solid py-2 px-4 rounded-full border-gray-400 hover:bg-black hover:text-white">
               Github
-            </button>
-            <button className=" border-2 w-[118px] text-sm flex justify-center items-center h-10 border-solid py-2 px-4 rounded-full border-gray-400 hover:bg-black hover:text-white">
+            </button></a>
+            <a  href="" className="no-underline text-black font-bold"><button className=" border-2 w-[122px] text-sm flex justify-center items-center h-10 border-solid py-2 px-4 rounded-full border-gray-400 hover:bg-black hover:text-white">
               Live Demo
-            </button>
+            </button></a>
           </div>
         </div>
       </div>

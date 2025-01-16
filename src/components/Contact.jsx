@@ -205,7 +205,7 @@ const Contact = () => {
 
           <div className="form-wrapper">
             <label htmlFor="purpose" className="text-black form-label">
-              purpose
+              Purpose
             </label>
 
             <div className="input-wrapper">
