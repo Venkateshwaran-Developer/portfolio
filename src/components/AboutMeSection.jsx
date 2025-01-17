@@ -16,17 +16,17 @@ const AboutMeSection = () => {
           <img
             src={about}
             alt="About Me"
-            className="flex items-center justify-center h-[400px] w-full rounded-3xl"
+            className="flex items-center justify-center object-cover h-[400px] w-full rounded-3xl"
           />
         </div>
 
         <div className="col-span-2 place-content-center  place-items-center ">
           <div className="grid md:grid-cols-2 sm:grid-cols-1 sm:gap-8  md:gap-16">
-            <div className="grid grid-cols-1 place-content-center place-items-center h-[200px]  sm:px-10 w-full border-2 border-gray-400 rounded-3xl">
+            <div className="grid grid-cols-1 place-content-center place-items-center h-[200px]   w-full border-2 border-gray-400 rounded-3xl">
               <img src={exp} className=" h-[50px]" />
               <h1 className=" text-xl font-bold">Experience</h1>
-              <p className="text-gray-500">3 Months Intern (React FullStack)</p>
-              <p className="text-gray-500 text-center">4 Months Intern ( Junior Developer )</p>
+              <p className="text-gray-500 px-2">3 Months Intern (React FullStack)</p>
+              <p className="text-gray-500 text-center px-2">4 Months Intern ( Junior Developer )</p>
             </div>
             <div className="grid grid-cols-1 place-content-center place-items-center h-[200px]  sm:px-16 w-full border-2 border-gray-400 rounded-3xl">
               <img src={edu} className=" h-[50px]" />
@@ -36,7 +36,7 @@ const AboutMeSection = () => {
             </div>
             
           </div>
-          <p className=" text-center mt-10 text-sm px-10 text-gray-600">
+          <p className=" text-center mt-10 text-sm  text-gray-600">
           A dedicated professional with 4 months of experience as a Junior Developer at Corvid Consulting UK and doing 
 an another internship based on React Developer at present. I&apos;ve acquired significant insights into web development. I am 
 committed to learning and mastering various aspects of this field. I am dedicated to contributing to the company&apos;s 
